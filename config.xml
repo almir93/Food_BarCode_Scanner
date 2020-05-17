@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.appery.app.NutritionBarcodeApp" version="1.0"
+        android-packageName="io.appery.project668847" android-versionCode="1"
+        ios-CFBundleIdentifier="io.appery.app.NutritionBarcodeApp" ios-CFBundleVersion="1.0"
+        xmlns="http://www.w3.org/ns/widgets"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:cdv="http://cordova.apache.org/ns/1.0" >
+    <name short="Nutrition Barcode App">Nutrition_Barcode_App</name>
+    <description></description>
+    <author email="hello@appery.io" href="https://appery.io/">Appery.io Team</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <name short="Nutrition Barcode App">Nutrition Barcode App</name>
+        <preference name="android-minSdkVersion" value="24" />
+        <preference name="android-targetSdkVersion" value="28" />
+        <preference name="android-versionName" value="1.100" />
+        <allow-intent href="market:*" />
+        <resource-file src="resources/google-services.json" target="app/google-services.json" />
+        <resource-file src="resources/android/get_target_platform.js" target="platform_www/get_target_platform.js" />
+        <icon src="resources/android/icon.png" />
+        <!--
+        <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
+        <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
+        <icon density="hdpi" src="resources/android/icon/drawable-hdpi-icon.png" />
+        <icon density="xhdpi" src="resources/android/icon/drawable-xhdpi-icon.png" />
+        <icon density="xxhdpi" src="resources/android/icon/drawable-xxhdpi-icon.png" />
+        <icon density="xxxhdpi" src="resources/android/icon/drawable-xxxhdpi-icon.png" />
+        -->
+        <splash density="land-hdpi" src="resources/android/splash/drawable-land-hdpi-screen.png" />
+        <splash density="land-ldpi" src="resources/android/splash/drawable-land-ldpi-screen.png" />
+        <splash density="land-mdpi" src="resources/android/splash/drawable-land-mdpi-screen.png" />
+        <splash density="land-xhdpi" src="resources/android/splash/drawable-land-xhdpi-screen.png" />
+        <splash density="land-xxhdpi" src="resources/android/splash/drawable-land-xxhdpi-screen.png" />
+        <splash density="land-xxxhdpi" src="resources/android/splash/drawable-land-xxxhdpi-screen.png" />
+        <splash density="port-hdpi" src="resources/android/splash/drawable-port-hdpi-screen.png" />
+        <splash density="port-ldpi" src="resources/android/splash/drawable-port-ldpi-screen.png" />
+        <splash density="port-mdpi" src="resources/android/splash/drawable-port-mdpi-screen.png" />
+        <splash density="port-xhdpi" src="resources/android/splash/drawable-port-xhdpi-screen.png" />
+        <splash density="port-xxhdpi" src="resources/android/splash/drawable-port-xxhdpi-screen.png" />
+        <splash density="port-xxxhdpi" src="resources/android/splash/drawable-port-xxxhdpi-screen.png" />
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+            <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+            <uses-permission android:name="android.permission.CAMERA" />
+            <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+            <uses-permission android:name="android.permission.READ_CONTACTS" />
+            <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+            <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+            <uses-permission android:name="android.permission.RECORD_AUDIO" />
+            <uses-permission android:name="android.permission.VIBRATE" />
+            <uses-permission android:name="android.permission.WAKE_LOCK" />
+            <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+        </config-file>
+        <chcp>
+            <config-file url="https://upd.appery.io/hotcode/45f11be2-c13f-4a72-a3ad-33c95edc499d/chcp.json"/>
+            <auto-download enabled="true"/>
+            <auto-install enabled="true"/>
+        </chcp>
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <allow-navigation href="*://*youtube.com" />
+        <resource-file src="resources/ios/get_target_platform.js" target="../../platform_www/get_target_platform.js" />
+
+        <icon height="57" src="resources/ios/icon/icon.png" width="57" />
+        <icon height="114" src="resources/ios/icon/icon@2x.png" width="114" />
+        <icon height="40" src="resources/ios/icon/icon-40.png" width="40" />
+        <icon height="80" src="resources/ios/icon/icon-40@2x.png" width="80" />
+        <icon height="120" src="resources/ios/icon/icon-40@3x.png" width="120" />
+        <icon height="50" src="resources/ios/icon/icon-50.png" width="50" />
+        <icon height="100" src="resources/ios/icon/icon-50@2x.png" width="100" />
+        <icon height="60" src="resources/ios/icon/icon-60.png" width="60" />
+        <icon height="120" src="resources/ios/icon/icon-60@2x.png" width="120" />
+        <icon height="180" src="resources/ios/icon/icon-60@3x.png" width="180" />
+        <icon height="72" src="resources/ios/icon/icon-72.png" width="72" />
+        <icon height="144" src="resources/ios/icon/icon-72@2x.png" width="144" />
+        <icon height="76" src="resources/ios/icon/icon-76.png" width="76" />
+        <icon height="152" src="resources/ios/icon/icon-76@2x.png" width="152" />
+        <icon height="167" src="resources/ios/icon/icon-83.5@2x.png" width="167" />
+        <icon height="29" src="resources/ios/icon/icon-small.png" width="29" />
+        <icon height="58" src="resources/ios/icon/icon-small@2x.png" width="58" />
+        <icon height="87" src="resources/ios/icon/icon-small@3x.png" width="87" />
+        <icon height="1024" src="resources/ios/icon/icon-1024.png" width="1024" />
+        <splash src="resources/ios/splash/Default~iphone.png" width="320" height="480"/>
+        <splash src="resources/ios/splash/Default@2x~iphone.png" width="640" height="960"/>
+        <splash src="resources/ios/splash/Default-568h@2x~iphone.png" width="640" height="1136"/>
+        <splash src="resources/ios/splash/Default-667h.png" width="750" height="1334"/>
+        <splash src="resources/ios/splash/Default-Portrait~ipad.png" width="768" height="1024"/>
+        <splash src="resources/ios/splash/Default-Landscape~ipad.png" width="1024" height="768"/>
+        <splash src="resources/ios/splash/Default-736h.png" width="1242" height="2208"/>
+        <splash src="resources/ios/splash/Default-Portrait@2x~ipad.png" width="1536" height="2048"/>
+        <splash src="resources/ios/splash/Default-Landscape@2x~ipad.png" width="2048" height="1536"/>
+        <splash src="resources/ios/splash/Default-Portrait@~ipadpro.png" width="2048" height="2732"/>
+        <splash src="resources/ios/splash/Default-Landscape-736h.png" width="2208" height="1242"/>
+        <splash src="resources/ios/splash/Default-Landscape@~ipadpro.png" width="2732" height="2048"/>
+        
+                <config-file target="*-Info.plist" parent="UIFileSharingEnabled">
+            	<false/>
+        </config-file>
+        <config-file target="*-Info.plist" parent="UIInterfaceOrientation">
+            	<string>UIInterfaceOrientationPortrait</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="UILaunchImageFile">
+            	<string>Default.png</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="UINewsstandApp">
+            	<false/>
+        </config-file>
+        <config-file target="*-Info.plist" parent="UIPrerenderedIcon">
+            	<false/>
+        </config-file>
+        <config-file target="*-Info.plist" parent="UIRequiresPersistentWiFi">
+            	<false/>
+        </config-file>
+        <config-file target="*-Info.plist" parent="UIStatusBarHidden">
+            	<true/>
+        </config-file>
+        <config-file target="*-Info.plist" parent="UIStatusBarStyle">
+            	<string>UIStatusBarStyleDefault</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="UIViewControllerBasedStatusBarAppearance">
+            	<false/>
+        </config-file>
+        <config-file target="*-Info.plist" parent="UIViewEdgeAntialiasing">
+            	<false/>
+        </config-file>
+        <config-file target="*-Info.plist" parent="UIViewGroupOpacity">
+            	<false/>
+        </config-file>
+        <config-file target="*-Info.plist" parent="UIRequiresFullScreen">
+            	<true/>
+        </config-file>
+        <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
+            	<string>Camera will be used by this app.</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="NSContactsUsageDescription">
+            	<string>Contacts will be used by this app.</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
+            	<string>Your location information will be used by this app. Choose &quot;Allow&quot; so the app can provide location services.</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
+            	<string>Your location information will be used by this app. Choose &quot;Allow&quot; so the app can provide location services.</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
+            	<string>Need photo library access to get pictures from there.</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="NSPhotoLibraryAddUsageDescription">
+            	<string>Need photo library access to save pictures there.</string>
+        </config-file>
+
+        <chcp>
+            <config-file url="https://upd.appery.io/hotcode/45f11be2-c13f-4a72-a3ad-33c95edc499d/chcp.json"/>
+            <auto-download enabled="true"/>
+            <auto-install enabled="true"/>
+        </chcp>
+    </platform>
+    <plugin name="cordova-plugin-whitelist" spec="1.3.3" />
+</widget>

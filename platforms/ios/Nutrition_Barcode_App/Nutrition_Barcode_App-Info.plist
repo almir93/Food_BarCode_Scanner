@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>en_US</string>
+    <key>CFBundleDisplayName</key>
+    <string>Nutrition Barcode App</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>$(PRODUCT_NAME)</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleSignature</key>
+    <string>????</string>
+    <key>CFBundleVersion</key>
+    <string>1.0</string>
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+    <key>NSMainNibFile</key>
+    <string/>
+    <key>NSMainNibFile~ipad</key>
+    <string/>
+    <key>UIRequiresFullScreen</key>
+    <true/>
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+      <string>UIInterfaceOrientationPortrait</string>
+      <string>UIInterfaceOrientationLandscapeLeft</string>
+      <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    <key>UISupportedInterfaceOrientations~ipad</key>
+    <array>
+      <string>UIInterfaceOrientationPortrait</string>
+      <string>UIInterfaceOrientationLandscapeLeft</string>
+      <string>UIInterfaceOrientationPortraitUpsideDown</string>
+      <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+      <key>NSExceptionDomains</key>
+      <dict>
+        <key>*youtube.com</key>
+        <dict>
+          <key>NSExceptionAllowsInsecureHTTPLoads</key>
+          <true/>
+        </dict>
+      </dict>
+      <key>NSAllowsArbitraryLoads</key>
+      <true/>
+    </dict>
+    <key>UIFileSharingEnabled</key>
+    <false/>
+    <key>UIInterfaceOrientation</key>
+    <string>UIInterfaceOrientationPortrait</string>
+    <key>UILaunchImageFile</key>
+    <string>Default.png</string>
+    <key>UINewsstandApp</key>
+    <false/>
+    <key>UIPrerenderedIcon</key>
+    <false/>
+    <key>UIRequiresPersistentWiFi</key>
+    <false/>
+    <key>UIStatusBarHidden</key>
+    <true/>
+    <key>UIStatusBarStyle</key>
+    <string>UIStatusBarStyleDefault</string>
+    <key>UIViewControllerBasedStatusBarAppearance</key>
+    <false/>
+    <key>UIViewEdgeAntialiasing</key>
+    <false/>
+    <key>UIViewGroupOpacity</key>
+    <false/>
+    <key>NSCameraUsageDescription</key>
+    <string>Camera will be used by this app.</string>
+    <key>NSContactsUsageDescription</key>
+    <string>Contacts will be used by this app.</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Your location information will be used by this app. Choose "Allow" so the app can provide location services.</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Your location information will be used by this app. Choose "Allow" so the app can provide location services.</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Need photo library access to get pictures from there.</string>
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>Need photo library access to save pictures there.</string>
+  </dict>
+</plist>

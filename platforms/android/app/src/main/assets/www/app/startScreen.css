@@ -1,0 +1,200 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("../libs/jquerymobile/1.4.5/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilebutton_2 */
+#startScreen_mobilebutton_2 {
+
+}
+.ui-btn.startScreen_mobilebutton_2 {
+
+}
+/* mobilecontainer */
+.ui-content.startScreen_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* scanned_value */
+.startScreen_scanned_value {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilesearchbar_17 */
+.startScreen_mobilesearchbar_17 {
+	margin: 4px 0px 4px 0px;
+}
+#startScreen_mobilesearchbar_17-cover-div {
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	margin: 9px 7px 8px 7px;
+	z-index: 9999;
+}
+/* mobilelabel_51 */
+.startScreen_mobilelabel_51 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* result_3 */
+.startScreen_result_3 {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilelabel_52 */
+.startScreen_mobilelabel_52 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* result_2 */
+.startScreen_result_2 {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilelabel_53 */
+.startScreen_mobilelabel_53 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* result_1 */
+.startScreen_result_1 {
+	margin: 10px 0px 10px 0px;
+}
+/* mobilelabel_010 */
+.startScreen_mobilelabel_010 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobiletextinput_protein */
+.startScreen_mobiletextinput_protein {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilelabel_55 */
+.startScreen_mobilelabel_55 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobiletextinput_B */
+.startScreen_mobiletextinput_B {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilelabel_56 */
+.startScreen_mobilelabel_56 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobiletextinput_C */
+.startScreen_mobiletextinput_C {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilelabel_57 */
+.startScreen_mobilelabel_57 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobiletextinput_D */
+.startScreen_mobiletextinput_D {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilelabel_58 */
+.startScreen_mobilelabel_58 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobiletextinput_suga */
+.startScreen_mobiletextinput_suga {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilelabel_59 */
+.startScreen_mobilelabel_59 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobiletextinput_calc */
+.startScreen_mobiletextinput_calc {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilelabel_60 */
+.startScreen_mobilelabel_60 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobiletextinput_46 */
+.startScreen_mobiletextinput_46 {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilelabel_61 */
+.startScreen_mobilelabel_61 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobiletextinput_sodium */
+.startScreen_mobiletextinput_sodium {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilelabel_62 */
+.startScreen_mobilelabel_62 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobiletextinput_CC */
+.startScreen_mobiletextinput_CC {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilelabel_63 */
+.startScreen_mobilelabel_63 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobiletextinput_AA */
+.startScreen_mobiletextinput_AA {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilelabel_64 */
+.startScreen_mobilelabel_64 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobiletextinput_cholestrol */
+.startScreen_mobiletextinput_cholestrol {
+	margin: 4px 0px 4px 0px;
+}
+/* googlemap_19 */
+.startScreen_googlemap_19 {
+	width: 320px; height: 200px;
+	margin: 4px 0px 4px 0px;
+}
+/* location */
+.startScreen_location {
+	text-shadow:none;
+	color:black;
+	font-family:Arial;
+}
+/* mobilefooter */
+.startScreen_mobilefooter {
+	min-height:38px;
+}

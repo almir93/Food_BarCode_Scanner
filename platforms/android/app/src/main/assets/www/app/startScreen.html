@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            startScreen
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- Enable all requests, inline styles, and eval() -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready data:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *">
+        <!-- Uncomment link and meta tags below to activate PWA icons and theme color -->
+        <!-- link rel="manifest" href="../manifest.json" crossOrigin="use-credentials" -->
+        <!-- meta name="theme-color" content="#ffffff" -->
+        <link href="../css/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="../css/theme/flat-ui-flat/flat-ui-flat.css" rel="stylesheet" />
+        <link href="../libs/jquerymobile/1.4.5/jquery.mobile.structure-1.4.5.css" rel="stylesheet"
+        />
+        <!-- Uncomment this script to activate service worker -->
+        <!-- <script>
+        if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('../sw.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.error('Error', err));
+        }
+        </script>
+        -->
+        <script type="text/javascript" src="../libs/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="../libs/store/json2.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-ajaxTransport.js">
+        </script>
+        <script type="text/javascript">
+            $(document).bind("mobileinit", function() {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1) {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                } else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1) {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                } else if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
+                    $.mobile.hashListeningEnabled = false;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="../libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.js">
+        </script>
+        <script type="text/javascript" src="../libs/apperyio/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="../libs/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery-ui-map/jquery.ui.map.full.min.js">
+        </script>
+        <link href="../libs/datepicker/jquery.ui.datepicker.mobile.css" rel="stylesheet"
+        type="text/css" />
+        <script type="text/javascript" src="../libs/datepicker/jQuery.ui.datepicker.js">
+        </script>
+        <script type="text/javascript" src="../libs/datepicker/jquery.ui.datepicker.mobile.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/appery.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/login.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="../get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="../cordova.js">
+        </script>
+        <link href="../libs/apperyio/mobilebase.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="../js/services/model.js">
+        </script>
+        <script type="text/javascript" src="../js/services/service.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/databaseUtils.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+            $(document).bind("mobileinit", function() {
+                $.mobile.page.prototype.options.degradeInputs.date = true;
+            });
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="startScreen" id="startScreen"
+        class="type-interior" data-theme="b">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="b" name="mobileheader" id="startScreen_mobileheader" class="startScreen_mobileheader">
+                <h1 dsid="mobileheader">
+                    Food Scanner
+                </h1>
+                <!-- mobilebutton_2 --><!--
+                --><a data-role="button" name="mobilebutton_2" dsid="mobilebutton_2" class="startScreen_mobilebutton_2 ui-btn-right"
+                id="startScreen_mobilebutton_2" data-corners="true" data-icon="camera" data-iconpos="left"
+                x-apple-data-detectors="false" data-inline='true' data-mini='true' data-theme="b"
+                tabindex="1">
+                Scan
+                </a>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="startScreen_mobilecontainer" name="mobilecontainer"
+            class="startScreen_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="b">
+                <link href="startScreen.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="startScreen.js">
+                </script>
+                <!-- scanned_value -->
+                <div data-role="fieldcontain" class="startScreen_scanned_value ">
+                    <input type="text" name="scanned_value" dsid="scanned_value" value="" placeholder="scanned values"
+                    id="startScreen_scanned_value" tabindex="2" multiple data-theme="b" class="startScreen_scanned_value"
+                    />
+                </div>
+                <!-- mobilesearchbar_17 -->
+                <div data-role="fieldcontain" class="startScreen_mobilesearchbar_17 ">
+                    <div id="startScreen_mobilesearchbar_17-cover-div">
+                        <img id="startScreen_mobilesearchbar_17-cover-img" src="../libs/apperyio/img/icon-search-cover.png"
+                        />
+                    </div>
+                    <input type="search" name="mobilesearchbar_17" id="startScreen_mobilesearchbar_17"
+                    dsid="mobilesearchbar_17" value="Search" placeholder="" data-theme="b" tabindex="10"
+                    class="startScreen_mobilesearchbar_17" />
+                </div>
+                <!-- mobilelabel_51 -->
+                <div name="mobilelabel_51" id="startScreen_mobilelabel_51" dsid="mobilelabel_51"
+                data-role="appery_label" class="startScreen_mobilelabel_51">
+                    Brand Name:
+                </div>
+                <!-- result_3 -->
+                <div data-role="fieldcontain" class="startScreen_result_3 ">
+                    <input type="text" name="result_3" dsid="result_3" value="" placeholder="brand name"
+                    id="startScreen_result_3" tabindex="11" multiple data-theme="b" class="startScreen_result_3"
+                    />
+                </div>
+                <!-- mobilelabel_52 -->
+                <div name="mobilelabel_52" id="startScreen_mobilelabel_52" dsid="mobilelabel_52"
+                data-role="appery_label" class="startScreen_mobilelabel_52">
+                    Serving Size:
+                </div>
+                <!-- result_2 -->
+                <div data-role="fieldcontain" class="startScreen_result_2 ">
+                    <input type="text" name="result_2" dsid="result_2" value="" placeholder="serving size"
+                    id="startScreen_result_2" tabindex="9" multiple data-theme="b" class="startScreen_result_2"
+                    />
+                </div>
+                <!-- mobilelabel_53 -->
+                <div name="mobilelabel_53" id="startScreen_mobilelabel_53" dsid="mobilelabel_53"
+                data-role="appery_label" class="startScreen_mobilelabel_53">
+                    Ingredients:
+                </div>
+                <!-- result_1 -->
+                <div data-role="fieldcontain" class="startScreen_result_1 ">
+                    <input type="text" name="result_1" dsid="result_1" value="" placeholder="ingredients"
+                    id="startScreen_result_1" tabindex="7" multiple data-theme="b" class="startScreen_result_1"
+                    />
+                </div>
+                <!-- mobilelabel_010 -->
+                <div name="mobilelabel_010" id="startScreen_mobilelabel_010" dsid="mobilelabel_010"
+                data-role="appery_label" class="startScreen_mobilelabel_010">
+                    Protein:
+                </div>
+                <!-- mobiletextinput_protein -->
+                <div data-role="fieldcontain" class="startScreen_mobiletextinput_protein ">
+                    <input type="text" name="mobiletextinput_protein" dsid="mobiletextinput_protein"
+                    value="" placeholder="Protein" id="startScreen_mobiletextinput_protein" tabindex="18"
+                    multiple data-theme="b" class="startScreen_mobiletextinput_protein" />
+                </div>
+                <!-- mobilelabel_55 -->
+                <div name="mobilelabel_55" id="startScreen_mobilelabel_55" dsid="mobilelabel_55"
+                data-role="appery_label" class="startScreen_mobilelabel_55">
+                    Fat:
+                </div>
+                <!-- mobiletextinput_B -->
+                <div data-role="fieldcontain" class="startScreen_mobiletextinput_B ">
+                    <input type="text" name="mobiletextinput_B" dsid="mobiletextinput_B" value="" placeholder="Fat"
+                    id="startScreen_mobiletextinput_B" tabindex="22" multiple data-theme="b" class="startScreen_mobiletextinput_B"
+                    />
+                </div>
+                <!-- mobilelabel_56 -->
+                <div name="mobilelabel_56" id="startScreen_mobilelabel_56" dsid="mobilelabel_56"
+                data-role="appery_label" class="startScreen_mobilelabel_56">
+                    Carbohydrate:
+                </div>
+                <!-- mobiletextinput_C -->
+                <div data-role="fieldcontain" class="startScreen_mobiletextinput_C ">
+                    <input type="text" name="mobiletextinput_C" dsid="mobiletextinput_C" value="" placeholder="Carbohydrate"
+                    id="startScreen_mobiletextinput_C" tabindex="21" multiple data-theme="b" class="startScreen_mobiletextinput_C"
+                    />
+                </div>
+                <!-- mobilelabel_57 -->
+                <div name="mobilelabel_57" id="startScreen_mobilelabel_57" dsid="mobilelabel_57"
+                data-role="appery_label" class="startScreen_mobilelabel_57">
+                    Fiber:
+                </div>
+                <!-- mobiletextinput_D -->
+                <div data-role="fieldcontain" class="startScreen_mobiletextinput_D ">
+                    <input type="text" name="mobiletextinput_D" dsid="mobiletextinput_D" value="" placeholder="Fiber"
+                    id="startScreen_mobiletextinput_D" tabindex="20" multiple data-theme="b" class="startScreen_mobiletextinput_D"
+                    />
+                </div>
+                <!-- mobilelabel_58 -->
+                <div name="mobilelabel_58" id="startScreen_mobilelabel_58" dsid="mobilelabel_58"
+                data-role="appery_label" class="startScreen_mobilelabel_58">
+                    Sugar:
+                </div>
+                <!-- mobiletextinput_suga -->
+                <div data-role="fieldcontain" class="startScreen_mobiletextinput_suga ">
+                    <input type="text" name="mobiletextinput_suga" dsid="mobiletextinput_suga" value=""
+                    placeholder="Sugar" id="startScreen_mobiletextinput_suga" tabindex="19" multiple
+                    data-theme="b" class="startScreen_mobiletextinput_suga" />
+                </div>
+                <!-- mobilelabel_59 -->
+                <div name="mobilelabel_59" id="startScreen_mobilelabel_59" dsid="mobilelabel_59"
+                data-role="appery_label" class="startScreen_mobilelabel_59">
+                    Calcium
+                </div>
+                <!-- mobiletextinput_calc -->
+                <div data-role="fieldcontain" class="startScreen_mobiletextinput_calc ">
+                    <input type="text" name="mobiletextinput_calc" dsid="mobiletextinput_calc" value=""
+                    placeholder="Calcium" id="startScreen_mobiletextinput_calc" tabindex="23" multiple
+                    data-theme="b" class="startScreen_mobiletextinput_calc" />
+                </div>
+                <!-- mobilelabel_60 -->
+                <div name="mobilelabel_60" id="startScreen_mobilelabel_60" dsid="mobilelabel_60"
+                data-role="appery_label" class="startScreen_mobilelabel_60">
+                    Iron:
+                </div>
+                <!-- mobiletextinput_46 -->
+                <div data-role="fieldcontain" class="startScreen_mobiletextinput_46 ">
+                    <input type="text" name="mobiletextinput_46" dsid="mobiletextinput_46" value=""
+                    placeholder="Iron" id="startScreen_mobiletextinput_46" tabindex="25" multiple data-theme="b"
+                    class="startScreen_mobiletextinput_46" />
+                </div>
+                <!-- mobilelabel_61 -->
+                <div name="mobilelabel_61" id="startScreen_mobilelabel_61" dsid="mobilelabel_61"
+                data-role="appery_label" class="startScreen_mobilelabel_61">
+                    Sodium
+                </div>
+                <!-- mobiletextinput_sodium -->
+                <div data-role="fieldcontain" class="startScreen_mobiletextinput_sodium ">
+                    <input type="text" name="mobiletextinput_sodium" dsid="mobiletextinput_sodium" value=""
+                    placeholder="Sodium" id="startScreen_mobiletextinput_sodium" tabindex="24" multiple
+                    data-theme="b" class="startScreen_mobiletextinput_sodium" />
+                </div>
+                <!-- mobilelabel_62 -->
+                <div name="mobilelabel_62" id="startScreen_mobilelabel_62" dsid="mobilelabel_62"
+                data-role="appery_label" class="startScreen_mobilelabel_62">
+                    Vitamin C:
+                </div>
+                <!-- mobiletextinput_CC -->
+                <div data-role="fieldcontain" class="startScreen_mobiletextinput_CC ">
+                    <input type="text" name="mobiletextinput_CC" dsid="mobiletextinput_CC" value=""
+                    placeholder="Vitamin C" id="startScreen_mobiletextinput_CC" tabindex="27" multiple
+                    data-theme="b" class="startScreen_mobiletextinput_CC" />
+                </div>
+                <!-- mobilelabel_63 -->
+                <div name="mobilelabel_63" id="startScreen_mobilelabel_63" dsid="mobilelabel_63"
+                data-role="appery_label" class="startScreen_mobilelabel_63">
+                    Vitamin A:
+                </div>
+                <!-- mobiletextinput_AA -->
+                <div data-role="fieldcontain" class="startScreen_mobiletextinput_AA ">
+                    <input type="text" name="mobiletextinput_AA" dsid="mobiletextinput_AA" value=""
+                    placeholder="Vitamin A" id="startScreen_mobiletextinput_AA" tabindex="26" multiple
+                    data-theme="b" class="startScreen_mobiletextinput_AA" />
+                </div>
+                <!-- mobilelabel_64 -->
+                <div name="mobilelabel_64" id="startScreen_mobilelabel_64" dsid="mobilelabel_64"
+                data-role="appery_label" class="startScreen_mobilelabel_64">
+                    Cholestrol:
+                </div>
+                <!-- mobiletextinput_cholestrol -->
+                <div data-role="fieldcontain" class="startScreen_mobiletextinput_cholestrol ">
+                    <input type="text" name="mobiletextinput_cholestrol" dsid="mobiletextinput_cholestrol"
+                    value="" placeholder="Cholestrol" id="startScreen_mobiletextinput_cholestrol" tabindex="28"
+                    multiple data-theme="b" class="startScreen_mobiletextinput_cholestrol" />
+                </div>
+                <!-- googlemap_19 -->
+                <div id="startScreen_googlemap_19" dsid="googlemap_19" name="googlemap_19" data-role="appery_googlemap"
+                tiggzitype="object" apperytype="object" class='startScreen_googlemap_19' style='width:100%;'>
+                </div>
+                <ul data-role="listview" id="startScreen_googlemap_19_markers" name="googlemap_19_markers"
+                dsid="googlemap_19_markers" style="display:none">
+                    <!-- location -->
+                    <li id="startScreen_location" name="location" dsid="location" tiggzitype="marker"
+                    apperytype="marker" rendered="true" latitude="" longitude="" text="search for food!"
+                    address="times square" show_info="true" style="display:none">
+                        <div id="startScreen_location_infoWindow" name="location_infoWindowContent" class='startScreen_location'>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="startScreen_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="startScreen_mobilefooter" data-theme="b">
+            </div>
+        </div>
+    </body>
+
+</html>

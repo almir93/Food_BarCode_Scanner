@@ -1,0 +1,57 @@
+{
+  "name": "io.appery.project668847",
+  "displayName": "",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cordova-android": "^8.1.0",
+    "cordova-ios": "^5.1.1",
+    "cordova-plugin-battery-status": "file:../plugins/cordova-plugin-battery-status-rel-2.0.2",
+    "cordova-plugin-camera": "file:../plugins/cordova-plugin-camera-rel-4.0.2",
+    "cordova-plugin-contacts": "file:../plugins/cordova-plugin-contacts-rel-3.0.1",
+    "cordova-plugin-device": "file:../plugins/cordova-plugin-device-rel-2.0.2",
+    "cordova-plugin-dialogs": "file:../plugins/cordova-plugin-dialogs-rel-2.0.1",
+    "cordova-plugin-file": "file:../plugins/cordova-plugin-file-rel-6.0.1",
+    "cordova-plugin-file-transfer": "file:../plugins/cordova-plugin-file-transfer-rel-1.7.1",
+    "cordova-plugin-geolocation": "file:../plugins/cordova-plugin-geolocation-rel-4.0.1",
+    "cordova-plugin-globalization": "file:../plugins/cordova-plugin-globalization-rel-1.11.0",
+    "cordova-plugin-inappbrowser": "file:../plugins/cordova-plugin-inappbrowser-rel-3.0.0",
+    "cordova-plugin-network-information": "file:../plugins/cordova-plugin-network-information-rel-2.0.1",
+    "cordova-plugin-splashscreen": "file:../plugins/cordova-plugin-splashscreen-rel-5.0.2",
+    "cordova-plugin-vibration": "file:../plugins/cordova-plugin-vibration-rel-3.1.0"
+  },
+  "devDependencies": {
+    "cordova-plugin-whitelist": "^1.3.4"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-battery-status": {},
+      "cordova-plugin-camera": {},
+      "cordova-plugin-contacts": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-dialogs": {},
+      "cordova-plugin-file": {},
+      "cordova-plugin-file-transfer": {},
+      "cordova-plugin-geolocation": {},
+      "cordova-plugin-globalization": {},
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-network-information": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-vibration": {}
+    },
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  }
+}

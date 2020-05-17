@@ -1,0 +1,13 @@
+{
+    "short_name": "Nutrition Barcode App",
+    "name": "Nutrition Barcode App",
+    "description": "",
+    "display": "fullscreen",
+    "orientation": "any",
+    "start_url": "/",
+    "scope": "/",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "icons": [
+    ]
+}
